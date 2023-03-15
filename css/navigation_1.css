@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Shantell Sans', cursive;
+    background-color: #333333;
+    color: #222222
+}
+
+.container {
+    background-color: #fafafa;
+    padding: 50px;
+    width: 100vw;
+    min-height: 100vh;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    
+}
+
+.container.show-nav {
+    transform: rotate(-20deg);
+}
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: #ff7979;
+    border-radius: 50%;
+    transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+    transform: rotate(-70deg);
+
+
+}
+
+.circle button {
+    cursor: pointer;
+    position: absolute;
+    width: 45px;
+    height: 75px;
+    top: 50%;
+    left: 50%;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #ffffff;
+    transition: tranform 0.5s linear;
+}
+
+.circle button#open {
+    left: 60%;
+}
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(+90deg);
+    transform-origin: top left;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+.content small {
+    color: #555555;
+    font-style: itallic;
+}
+
+.content p {
+    color: #333333;
+    line-height: 1.5;
+}
+
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.5s;
+}
+
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-in;
+}
+nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+
+}
+nav ul li + li + li {
+    margin-left: 30px;
+    transform: translateX(-250%);
+
+}
+
+nav ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fafafa;
+    text-decoration: none;
+}
