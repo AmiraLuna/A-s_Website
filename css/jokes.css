@@ -4,5 +4,7 @@ body {
     display: flex;
     align-items: center;
     justify content: center;
-    backgound-color: 
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FF91AF;
 }
+
