@@ -66,3 +66,9 @@ body {
 .btn:active {
     transform: scale(0.98);
 }
+
+.dividers {
+    display: flex;
+    color: white;
+    width: 
+}
