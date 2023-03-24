@@ -1,6 +1,6 @@
 const textEl = document.getElementById('text')
 const speedEl = document.getElementById('speed')
-const text = 'The Fitness Gram Pacer Test is a multistage aerobic-capacity'
+const text = 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
 let idx = 1
 let speed = 300 / speedEl.value
 
