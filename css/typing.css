@@ -25,3 +25,8 @@ input {
     background-color: darksalmon;
     text-align: center;
 }
+
+h1 {
+    display: flex;
+    text-align: center;
+}
