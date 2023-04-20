@@ -30,3 +30,19 @@ body {
         flex-direction: column;
     }
 }
+
+nav {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+}
+
+nav a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
